@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "Included.c"
 void arrayTest()
 {
 	int kk[] = {34,234,2,45,34,34,23},*d = kk;
@@ -30,5 +31,6 @@ void main()
 	printf("i = %d,k=%d i+k = %d\n",*j,*k,(*j+*k));
 	printf("kkkkkkkkkkkk\n");
 //	kk();
-	arrayTest();
+//	arrayTest();
+	included();
 }
