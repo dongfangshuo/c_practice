@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "data.c"
+#include "Util.c"
 void  InsertList(SeqList *l,int i ,DataType x)
 {
 	int j,temp,*data,mid;
@@ -26,17 +27,7 @@ void  InsertList(SeqList *l,int i ,DataType x)
 	data[i-1] = x;
 	l->length++;
 }
-void showData(SeqList *l)
-{
-	int i,len,*data; 
-	data = l->data;	
-	printf("seqlist length is %d \n ",l->length);
-	for(i = 0,len = l->length; i < len;i++)
-	{
-		printf("the index %d => %d \n",i,*(data+i));	
-	}
-}
-void main()
+void main_2()
 {
 	SeqList s,*l;
 	DataType data = 8;
