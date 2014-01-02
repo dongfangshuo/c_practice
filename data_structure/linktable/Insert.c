@@ -22,6 +22,7 @@ LinkList headInsert1(DataType *dtp,int size)
 	return head;
 }
 //不用头节点
+//这个方法太笨
 LinkList headInsert2(DataType *dtp,int size)
 {
 	LinkList head = NULL;		
@@ -63,12 +64,17 @@ void showLink(LinkList head)
 	}
 		printf("%d\n",head->data);	
 }
+Status kk()
+{
+	return OK;
+ }
 void main()
 {
 	int size = 10;	
 	LinkList head;
 	DataType ds[10] = {0,1,2,3,4,5,6,7,8,9}, *dtp  = ds;
 	printf("main \n");
-	head = headInsert2(dtp,size);
-	showLink(head);
+//	head = headInsert2(dtp,size);
+//	showLink(head);
+	kk();
 }
