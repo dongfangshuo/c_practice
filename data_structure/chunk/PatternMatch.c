@@ -1,5 +1,5 @@
 #include <stdio.h>
-void match(int indexs[100],char *pattern)	
+int match(,char *pattern)	
 {
 	int kk[3] = {1,2,3},*p = kk;	
 }
